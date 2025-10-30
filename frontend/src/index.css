@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  body {
+    @apply font-['Inter'] bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white min-h-screen;
+    background-attachment: fixed;
+  }
+  
+  * {
+    @apply scroll-smooth;
+    color: inherit;
+  }
+  
+  /* Ensure all text is visible */
+  h1, h2, h3, h4, h5, h6, p, span, div, label, input, select, textarea, button {
+    color: inherit;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-blue-500/20;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm border border-white/20;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-white placeholder-white/60 backdrop-blur-sm;
+  }
+  
+  .input-field option {
+    @apply bg-slate-800 text-white;
+  }
+  
+  .card {
+    @apply bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-white;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/10 p-8 text-white;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 bg-clip-text text-transparent font-bold;
+  }
+  
+  .hero-gradient {
+    @apply bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 backdrop-blur-xl border border-white/10 text-white;
+  }
+  
+  .visible-text {
+    @apply text-white font-medium;
+  }
+  
+  .bright-text {
+    @apply text-white font-semibold;
+  }
+  
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .glow {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
+  50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.profile-icon {
+  position: relative;
+}
+
+.profile-icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(96, 165, 250), rgb(168, 85, 247));
+  opacity: 0.2;
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
