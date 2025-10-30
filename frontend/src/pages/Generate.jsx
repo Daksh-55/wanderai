@@ -40,7 +40,7 @@ const Generate = () => {
     <div className="max-w-3xl mx-auto">
       <div className="glass-card relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5"></div>
-        
+
         <div className="relative z-10">
           <div className="text-center mb-10">
             <div className="text-8xl mb-6 floating">✈️</div>
