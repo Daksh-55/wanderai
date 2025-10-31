@@ -136,4 +136,4 @@ If you have any questions or need help with deployment, please open an issue or 
 
 ---
 
-**Made with ❤️ by the WanderAI Team**
+**Made with ❤️ by Daksh Vawani**
