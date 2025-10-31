@@ -17,8 +17,8 @@ WanderAI is a full-stack web application that generates custom trip itineraries 
 - **Deployment:** Vercel (Frontend) + Render (Backend) + MongoDB Atlas
 
 ## 🚀 Live Demo
-- **Frontend:** [https://wanderai.vercel.app](https://wanderai.vercel.app)
-- **Backend API:** [https://wanderai-backend.onrender.com](https://wanderai-backend.onrender.com)
+- **Frontend:** https://wanderai-liart.vercel.app/
+- **Backend API:** https://wanderai-1aal.onrender.com/
 
 ## 🧩 Core Features
 - ✅ **User Authentication** - Secure signup/login with JWT
